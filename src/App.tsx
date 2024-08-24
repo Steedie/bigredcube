@@ -10,7 +10,7 @@ import "./App.css";
 function BigRedCube() {
   const ref = useRef<Mesh>(null);
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (ref.current) {
       ref.current.rotation.x += delta;
       ref.current.rotation.y += delta;
